@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'monsterrat', sans-serif;
+  background-image: url('assets/movieHub/streamMan.jpg');
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+}
+
+header {
+  padding: 50px 25px 0px;
+}
+
+header h1 {
+  color: white;
+  font-size: 48px;
+  font-weight: 500;
+  text-align: center;
+}
+
+header h4 {
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+}
+
+section {
+  padding: 15px;
+}
+
+.alt {
+  background: url('./assets/movieHub/imgNotAvailable.jpg');
+}
+
+.searchbox {
+  display: block;
+  width: 100%;
+  padding: 15px;
+
+  border: none;
+  outline: none;
+  background: none;
+
+  background-color: white;
+  border-radius: 8px;
+
+  font-size: 28px;
+  font-weight: 300;
+  
+  transition: 0.4s ease-out;
+}
+
+.searchbox:focus {
+  box-shadow: 0px 0px 8px 3px dodgerblue;
+}
+
+.results {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px -15px;
+}
+
+.results .result {
+  width: 33.33%;
+  min-width: 25px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.results .result img {
+  display: block;
+  width: 100%;
+}
+
+.results .result h3 {
+  color: ivory;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px;
+  background-color:  rgba(255, 255, 255, 0.5);
+  flex: 1 1 100%;
+  transition: 0.4s ease-out;
+}
+
+.results .result:hover h3 {
+  background: white;
+  color: dodgerblue;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url('./assets/movieHub/walkingMan.jpg');
+
+  overflow-y: scroll;
+}
+
+.popup .content {
+  display: block;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 25px;
+
+  color: white;
+}
+
+.popup .content h2 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.popup .content h2 span {
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.popup .content .rating {
+  margin-bottom: auto;
+}
+
+.popup .content .type {
+  margin-bottom: 30px;
+}
+
+.popup .content .plot {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px -15px 30px;
+}
+
+.popup .content .plot img {
+  flex: 1 1 50%;
+  max-width: 300px;
+  padding: 0px 15px;
+}
+
+.popup .content .plot p {
+  flex: 1 1 50%;
+  padding: 15px;
+}
+
+.popup .content .close {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: 700;
+
+  background: rgba(255, 255, 255, 0.5);
+  color: white;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  appearance: none;
+  cursor: pointer;
+
+  transition: 0.4s ease-out;
+}
+
+.popup .content .close:hover {
+  background: dodgerblue;
+}
+
+.result .alt {
+  background-image: url('./assets/movieHub/imgNotAvailable.jpg');
+}
+
+
+main {
+  width: 100%;
+  max-width: 968px;
+  margin: 0 auto;
+}
