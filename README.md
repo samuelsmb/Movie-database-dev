@@ -1,9 +1,9 @@
-# Requirements
+## Requirements
 Head over to http://www.omdbapi.com/apikey.aspx and get yourself an api-key for the movie database
 
 After that, create an .env.local file in your project containing a variable: REACT_APP_API=https://www.omdbapi.com/?i={your-i-value}&apikey={your-apikey-value}
 
-# Dependencies (npm):
+## Dependencies (npm):
 Run the command "npm install" to install the dependencies for this application. When you have done that, follow along with the available scrpts below.
 
 ## Available Scripts
