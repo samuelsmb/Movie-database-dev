@@ -18,32 +18,16 @@ function CardUI({ result }) {
 
       axios(apiurl + "&t=" + id).then(({ data })=> {
         let selectedMovie = data;
-        // console.log(selectedMovie)
-        //alert(result);
-        // setSelectedMovie(prevState => {
-        //     return { ...prevState, selectedMovie: selectedMovie}
-        //   })
         setSelectedMovie(selectedMovie)
-        // console.log(selectedMovie);
-
-
-
       });
       
       setModal(true)
-
-
-
     }
   
     const handleClose = () => {
       setModal(false)
       setSelectedMovie({})
     }
-
-
-    
-    
 
     return (
         <div className=" card border-0 text-center shadow rounded-end" style={{ marginBottom:"20px" }} >
