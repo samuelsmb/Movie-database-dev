@@ -1,5 +1,6 @@
 ## Requirements
-Head over to http://www.omdbapi.com/apikey.aspx and get yourself an api-key for the movie database
+Head over to https://www.patreon.com/ and create an account.
+Head over to http://www.omdbapi.com/apikey.aspx and get yourself an api-key for the movie database using your patreon account.
 
 After that, create an .env.local file in your project containing a variable: REACT_APP_API=https://www.omdbapi.com/?i={your-i-value}&apikey={your-apikey-value}
 
